@@ -1,0 +1,256 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+#about, #skills, #projects, #contact {
+    margin-bottom: 3rem;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos en el contenedor */
+}
+
+#skills ul li {
+    margin: 10px;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+
+figure {
+    display: inline-block; /* Permite que figure se comporte como un bloque */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 30%; /* Ajusta según el tamaño deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* La imagen se comporta como un bloque */
+    margin: 0 auto; /* Centra la imagen dentro del figure */
+}
+
+figcaption {
+    margin-top: 5px; /* Espacio entre la imagen y el texto */
+    font-size: 0.9em; /* Ajusta el tamaño de la fuente si es necesario */
+}
+
+/* Asegura que el contenedor de la lista esté adecuadamente configurado */
+.container {
+    margin-top: 20px;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para las imágenes de perfil */
+.img-fluid {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative; /* Evita superposiciones */
+    width: 100%;
+}
+
+
+/* Estilo para el formulario */
+form {
+    display: block;
+    max-width: 600px; /* Limita el ancho si es necesario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+
+form input, form textarea {
+    width: 100%; /* Ajustar el ancho a su contenedor */
+    max-width: 400px; /* Limita el ancho máximo */
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* button {
+    
+    
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+} */
+button:hover {
+    background-color: #555;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.slides img {
+    min-width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.skill-figure {
+    position: relative;
+    display: inline-block;
+}
+
+.skill-img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.skill-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.skill-figure:hover .skill-img {
+    transform: scale(1.1);
+}
+
+.skill-figure:hover .skill-text {
+    opacity: 1;
+}
+#contact {
+    text-align: center;
+    padding: 2rem 0;
+}
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align:center; /* Alinea los elementos del formulario a la izquierda dentro del contenedor centrado */
+}
+#contact-form label {
+    display: block;
+    margin: 0.5rem 0;
+}
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#contact-form button {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin: 0 auto;
+}
+#contact-form button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">Acerca de mí</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Mis Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+     <!-- Carrusel -->
+    <div class="carousel">
+      <div class="slides">
+          <img src="./assets/img/AdobeStock_126016889apaisado-710x367.jpg" alt="Imagen 1">
+          <img src="./assets/img/fel_im.png" alt="Imagen 2">
+          <img src="./assets/img/que-es-full-stack.png" alt="Imagen 4">
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+    <section id="about">
+      <div class="container text-start">
+        <div class="row">
+        <div class="col-md-12">
+        <h1>Full Stack Python</h1>
+        <p>Ingeniero en Informática titulado de la universidad Andrés Bello. Durante mi carrera he cursado ramos de gestión de proyectos, minería de datos, desarrollo web e infraestructura TI. Si bien la mayor experiencia laboral fue con empresas del sector en atención al cliente, pero hoy estoy en proceso de reconversión laboral hacia las nuevas tecnologías. Poseo habilidades de comunicación efectiva, trabajo en equipo y siempre con el enfoque de mejora continua.</p>
+      </div>
+     </div>
+    </div>
+    </section>
+ <!-- Información Personal -->
+ <div class="container text-start">
+  <div class="row align-items-start">
+    <div class="col-md-6">
+      <ul>
+      <h1>Información Personal</h1>
+        <li><b>Fecha de nacimiento:</b> 18/ mayo / 1991</li>
+        <li><b>Dirección:</b> El lingue #122, Estación Central</li>
+        <li><b>TELEFONO:</b> +569 9999 9999</li>
+        <li><b>RUT:</b> 12.111.111-9</li>
+        <li><b>Nombre:</b> Eleazar Abraham Pereira Pineida</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <img class="img-fluid" src="assets/img/Fotografia.jpeg" alt="Fotografía">
+    </div>
+  </div>
+</div>
+    
+<div class="container text-start">
+  <div class="row align-items-start">
+      <div class="col-12
+      ">
+      <section id="skills">
+        <h1 class="container">Skills</h1>
+        <ul>
+            <li>
+                <figure class="skill-figure">
+                    <img class="img-fluid svg-ie-fix skill-img" src="assets/img/html5.png" alt="HTML5" onmouseover="cambiarColor(this, 'HTML')" onclick="mostrarMensaje('HTML')">
+                    <figcaption class="skill-text">HTML</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure class="skill-figure">
+                    <img class="img-fluid svg-ie-fix skill-img" src="assets/img/csss.png" alt="CSS3" onmouseover="cambiarColor(this, 'CSS')" onclick="mostrarMensaje('CSS')">
+                    <figcaption class="skill-text">CSS</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure class="skill-figure">
+                    <img class="img-fluid svg-ie-fix skill-img" src="assets/img/js.png" alt="JavaScript" onmouseover="cambiarColor(this, 'JavaScript')" onclick="mostrarMensaje('JavaScript')">
+                    <figcaption class="skill-text">JavaScript</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure class="skill-figure">
+                    <img class="img-fluid svg-ie-fix skill-img" src="assets/img/python.png" alt="Python" onmouseover="cambiarColor(this, 'Python')" onclick="mostrarMensaje('Python')">
+                    <figcaption class="skill-text">Python</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure class="skill-figure">
+                    <img class="img-fluid svg-ie-fix skill-img" src="assets/img/django.png" alt="Django" onmouseover="cambiarColor(this, 'Django')" onclick="mostrarMensaje('Django')">
+                    <figcaption class="skill-text">Django</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure class="skill-figure">
+                    <img class="img-fluid svg-ie-fix skill-img" src="assets/img/git.png" alt="Git" onmouseover="cambiarColor(this, 'Git')" onclick="mostrarMensaje('Git')">
+                    <figcaption class="skill-text">Git</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure class="skill-figure">
+                    <img class="img-fluid svg-ie-fix skill-img" src="assets/img/postgresql.png" alt="PostgreSQL" onmouseover="cambiarColor(this, 'PostgreSQL')" onclick="mostrarMensaje('PostgreSQL')">
+                    <figcaption class="skill-text">PostgreSQL</figcaption>
+                </figure>
+            </li>
+        </ul>
+        <div id="mensaje-skill"></div>
+    </section>    
+      </div>
+  </div>
+</div>
+
+
+   
+<section id="projects py-5">
+  <div class="container">
+      <h1 class="mb-5 text-center">Mis Proyectos</h1>
+      <div class="row justify-content-center">
+          <div class="col-md-5 mb-4">
+              <div class="card h-100" style="width: 100%;">
+                  <img src=".//assets/img/ricomida.png" class="card-img-top" alt="Imagen de ejemplo">
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Ricomida</h5>
+                      <p class="card-text flex-grow-1">Es una página que contiene una gran cantidad de recetas de comida. En ella podrás encontrar una gran variedad de pizza, platos de fondo y ricos postres. </p>
+                      <a href="https://ele7.github.io/Ricomida/" class="btn btn-primary">Ir a algún lado</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-5 mb-4">
+              <div class="card h-100" style="width: 100%;">
+                  <img src=".//assets/img/check.png" class="card-img-top" alt="Imagen de ejemplo">
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Check-App</h5>
+                      <p class="card-text flex-grow-1">Aplicación construida para la administración de paquetes de encomienda en una comunidad. A lo largo de los años hemos visto que las compras de manera online han incrementado y asi la labor de conserjería también, esta aplicación viene a ser una solución a esta problemática.</p>
+                      <a href="#"  class="btn btn-primary">Ir a algún lado</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <section id="contact">
+      <h1>Contacto</h1>
+      <form id="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Eleazar Pereira. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
